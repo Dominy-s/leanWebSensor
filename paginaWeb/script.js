@@ -4,11 +4,11 @@ const restartButton = document.getElementById('restartButton');
 const producaoDisplay = document.getElementById('producaoDisplay');
 
 var urlPost = 'https://leanwebsensorserver.onrender.com/chaves'
-var urlGet = 'https://leanwebsensorserver.onrender.com/producao'
+var urlGet = 'https://producao-thor.onrender.com'
 
 function receiverRequest(){
     fetch(urlGet, {
-        method: 'GET',
+        method: 'GET',  
         headers: {
             'Content-Type': 'application/json'
         }
