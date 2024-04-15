@@ -3,8 +3,8 @@ const desligarButton = document.getElementById('desligarButton');
 const restartButton = document.getElementById('restartButton');
 const producaoDisplay = document.getElementById('producaoDisplay');
 
-var urlPost = 'https://leanwebsensor-gvii.onrender.com/chaves'
-var urlGet = 'https://leanwebsensor-gvii.onrender.com/producao'
+var urlPost = 'https://leanwebsensor-lbd8.onrender.com//chaves'
+var urlGet = 'https://leanwebsensor-lbd8.onrender.com//producao'
 
 function receiverRequest(){
     fetch(urlGet, {
