@@ -57,7 +57,7 @@ while True:
     x = requests.post(urlPost, json = postagem)
     print(f"contador: {contador}")
     print (x.status_code)
-
+    
     # armazena na variável chaves, o request do tipo GET e transforma
     # o retorno em um json
     chaves = requests.get(urlGet)
