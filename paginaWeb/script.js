@@ -8,22 +8,6 @@ var erros = document.getElementById('erros')
 var urlPost = 'https://leanwebsensor-lbd8.onrender.com/chaves'
 var urlGet = 'https://leanwebsensor-lbd8.onrender.com/producao'
 
-
-function receiverRequest() {
-    fetch(urlGet, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/chaves'
-        }
-    })
-    .then(response => response.json())
-    .then(json => {
-        producaoDisplay.textContent = json.sensor;
-        erros.textContent = json.sensor;
-        console.log(json.chaves);
-    })
-}
-
 function receiverRequest(){
     fetch(urlGet, {
         method: 'GET',  
