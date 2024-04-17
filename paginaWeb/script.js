@@ -23,11 +23,13 @@ function receiverRequest(){
 }
 
 setInterval(receiverRequest, 2000)  
+    console.log(_liga);
 
-ligarButton.addEventListener('click', () => {
-    let requestData = {"liga": 1, "desliga": 0, "restart": 0}
-    sendRequest(requestData)
-});
+        ligarButton.addEventListener('click', () => {
+            let requestData = {"liga": 1, "desliga": 0, "restart": 0}
+            sendRequest(requestData)
+        });
+
 
 desligarButton.addEventListener('click', () => {
     let requestData = {"liga": 0, "desliga": 1, "restart": 0}
