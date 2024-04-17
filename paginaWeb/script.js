@@ -2,6 +2,7 @@ const ligarButton = document.getElementById('ligarButton');
 const desligarButton = document.getElementById('desligarButton');
 const restartButton = document.getElementById('restartButton');
 const producaoDisplay = document.getElementById('producaoDisplay');
+const status = document.getElementById('status');
 
 var urlPost = 'https://leanwebsensor-lbd8.onrender.com/chaves'
 var urlGet = 'https://leanwebsensor-lbd8.onrender.com/producao'
@@ -16,6 +17,7 @@ function receiverRequest(){
     .then(response => response.json())
     .then(json => {
         producaoDisplay.textContent = json.sensor;
+         status.textContent = json.msg;
         console.log(json.sensor);
     })
 }
