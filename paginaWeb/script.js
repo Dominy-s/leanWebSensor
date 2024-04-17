@@ -18,7 +18,7 @@ function receiverRequest() {
     })
     .then(response => response.json())
     .then(json => {
-        producaoDisplay.textContent = json.sensor;
+        producaoDisplay.textContent = json.chaves;
         erros.textContent = json.chaves;
         console.log(json.erros);
     })
