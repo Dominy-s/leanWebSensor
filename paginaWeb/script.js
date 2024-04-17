@@ -3,7 +3,6 @@ const desligarButton = document.getElementById('desligarButton');
 const restartButton = document.getElementById('restartButton');
 const producaoDisplay = document.getElementById('producaoDisplay');
 const status = document.getElementById('status');
-var erros = document.getElementById('erros')
 
 var urlPost = 'https://leanwebsensor-lbd8.onrender.com/chaves'
 var urlGet = 'https://leanwebsensor-lbd8.onrender.com/producao'
