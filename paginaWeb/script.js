@@ -20,6 +20,22 @@ function receiverRequest(){
          status.textContent = json.msg;
         console.log(json.sensor);
     })
+    if(json.msg == "LIGADO"){
+        if(json.snsor == sensor_old)
+        contaErro = contaErro + 1;
+    else{
+        contaErro = 0;
+        sensor_old = json.sensor;
+    }
+    if (contaErro>= 5)
+      error.textContent = "ERRO DE ACIONAMENTO";
+    else
+     erro.textContent = "";
+
+    }
+    else
+     erro.textContent = "";
+
 }
 
 setInterval(receiverRequest, 2000)  
