@@ -19,7 +19,6 @@ function receiverRequest(){
         producaoDisplay.textContent = json.sensor;
          status.textContent = json.msg;
         console.log(json.sensor);
-    })
     if(json.msg == "LIGADO"){
         if(json.snsor == sensor_old)
         contaErro = contaErro + 1;
@@ -35,6 +34,7 @@ function receiverRequest(){
     }
     else
      erro.textContent = "";
+    })
 
 }
 
